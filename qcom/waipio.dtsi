@@ -80,12 +80,12 @@
 			dynamic-power-coefficient = <100>;
 			#cooling-cells = <2>;
 			L2_0: l2-cache {
-			      compatible = "arm,arch-cache";
+			      compatible = "cache";
 			      cache-level = <2>;
 			      next-level-cache = <&L3_0>;
 
 				L3_0: l3-cache {
-					compatible = "arm,arch-cache";
+					compatible = "cache";
 					cache-level = <3>;
 				};
 			};
@@ -120,7 +120,7 @@
 			dynamic-power-coefficient = <100>;
 			#cooling-cells = <2>;
 			L2_2: l2-cache {
-			      compatible = "arm,arch-cache";
+			      compatible = "cache";
 			      cache-level = <2>;
 			      next-level-cache = <&L3_0>;
 			};
@@ -155,7 +155,7 @@
 			dynamic-power-coefficient = <251>;
 			#cooling-cells = <2>;
 			L2_4: l2-cache {
-			      compatible = "arm,arch-cache";
+			      compatible = "cache";
 			      cache-level = <2>;
 			      next-level-cache = <&L3_0>;
 
@@ -176,7 +176,7 @@
 			dynamic-power-coefficient = <251>;
 			#cooling-cells = <2>;
 			L2_5: l2-cache {
-			      compatible = "arm,arch-cache";
+			      compatible = "cache";
 			      cache-level = <2>;
 			      next-level-cache = <&L3_0>;
 			};
@@ -196,7 +196,7 @@
 			dynamic-power-coefficient = <251>;
 			#cooling-cells = <2>;
 			L2_6: l2-cache {
-			      compatible = "arm,arch-cache";
+			      compatible = "cache";
 			      cache-level = <2>;
 			      next-level-cache = <&L3_0>;
 			};
@@ -216,7 +216,7 @@
 			dynamic-power-coefficient = <396>;
 			#cooling-cells = <2>;
 			L2_7: l2-cache {
-			      compatible = "arm,arch-cache";
+			      compatible = "cache";
 			      cache-level = <2>;
 			      next-level-cache = <&L3_0>;
 			};
