@@ -89,6 +89,15 @@
 	};
 };
 
+&pm8350b_gpios {
+	pm8350b_rear_tof_therm {
+		pm8350b_rear_tof_therm_default: pm8350b_rear_tof_therm_default {
+			pins = "gpio2";
+			bias-high-impedance;
+		};
+	};
+};
+
 &pmk8350_sdam_2 {
 	hap_cl_brake: cl_brake@7c {
 		reg = <0x7c 0x1>;
@@ -128,7 +137,7 @@
 
 &pmk8350_vadc {
 	pinctrl-names = "default";
-	pinctrl-0 = <&pm8350_rear_tof_therm_default>;
+	pinctrl-0 = <&pm8350b_rear_tof_therm_default>;
 
 	pm8350b_chg_temp {
 		reg = <PM8350B_ADC7_CHG_TEMP>;
