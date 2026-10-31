@@ -432,7 +432,6 @@
 
 	ramoops_mem: ramoops_region {
 		alloc-ranges = <0x0 0x00000000 0xffffffff 0xffffffff>;
-		size = <0x0 0x200000>;
 		no-map;
 	};
 };
@@ -2164,7 +2163,6 @@
 	qcom_ramoops: qcom-ramoops {
 		compatible = "qcom,ramoops";
 		memory-region = <&ramoops_mem>;
-		pmsg-size = <0x200000>;
 		mem-type = <2>;
 	};
 
