@@ -599,7 +599,7 @@ _platform_map = {
             {"name": "cape.dtb"},
         ],
         "dtbo_list": [
-            {"name": "cape-qrd-pm8010-overlay.dtbo"},
+            {"name": "mondrian-sm8475-pm8008-overlay.dtbo"},
         ],
     },
 }

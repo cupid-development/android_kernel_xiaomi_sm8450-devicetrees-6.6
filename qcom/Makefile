@@ -287,7 +287,7 @@ dtb-y += $(parrot-dtb-y)
 CAPE_BASE_DTB += cape.dtb
 
 CAPE_BOARDS += \
-		cape-qrd-pm8010-overlay.dtbo
+		mondrian-sm8475-pm8008-overlay.dtbo
 
 cape-dtb-$(CONFIG_ARCH_CAPE) += \
 	$(call add-overlays, $(CAPE_BOARDS),$(CAPE_BASE_DTB))
