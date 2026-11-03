@@ -112,6 +112,10 @@
 	qcom,wireless-fw-name = "idt9415.bin";
 };
 
+&pm8350b_haptics {
+	qcom,fifo-vmax-mv = <4200>;
+};
+
 &qupv3_se9_i2c {
 	status = "ok";
 	qcom,clk-freq-out = <1000000>;
