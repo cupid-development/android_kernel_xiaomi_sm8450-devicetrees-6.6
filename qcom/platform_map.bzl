@@ -599,7 +599,12 @@ _platform_map = {
             {"name": "cape.dtb"},
         ],
         "dtbo_list": [
-            {"name": "cape-qrd-pm8010-overlay.dtbo"},
+            {"name": "diting-sm8475-pm8008-overlay.dtbo"},
+            {"name": "mayfly-sm8475-pm8008-overlay.dtbo"},
+            {"name": "mondrian-sm8475-pm8008-overlay.dtbo"},
+            {"name": "thor-sm8475-pm8008-overlay.dtbo"},
+            {"name": "unicorn-sm8475-pm8008-overlay.dtbo"},
+            {"name": "zizhan-sm8475-pm8008-overlay.dtbo"},
         ],
     },
 }
