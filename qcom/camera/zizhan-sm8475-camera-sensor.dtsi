@@ -562,7 +562,8 @@ cam_sensor_u_dvdd_active: cam_sensor_u_dvdd_active {
 	//GPIO1 -> 302
 	qcom,cam-res-mgr {
 		compatible = "qcom,cam-res-mgr";
-		gpios-shared-pinctrl = <427 403>;
+		shared-pinctrl-gpios = <&tlmm 126 0>,
+			<&tlmm 102 0>;
 		shared-pctrl-gpio-names = "cam_wide", "cam_wide";
 		pinctrl-names = "cam_wide_active", "cam_wide_suspend";
 		pinctrl-0 = <&cam_sensor_active_rst9

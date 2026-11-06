@@ -425,7 +425,14 @@
 	//GPIO1 -> 302
 	qcom,cam-res-mgr {
 		compatible = "qcom,cam-res-mgr";
-		gpios-shared-pinctrl = <427 403 472 484 481 401 429 475>;
+		shared-pinctrl-gpios = <&tlmm 126 0>,
+			<&tlmm 102 0>,
+			<&tlmm 171 0>,
+			<&tlmm 183 0>,
+			<&tlmm 180 0>,
+			<&tlmm 100 0>,
+			<&tlmm 128 0>,
+			<&tlmm 174 0>;
 		shared-pctrl-gpio-names = "cam_wide", "cam_wide", "cam_wide", "cam_wide", "cam_wide", "cam_tele", "cam_tele", "cam_tele";
 		pinctrl-names = "cam_wide_active", "cam_wide_suspend","cam_tele_active", "cam_tele_suspend";
 		pinctrl-0 = <&cam_sensor_active_wide

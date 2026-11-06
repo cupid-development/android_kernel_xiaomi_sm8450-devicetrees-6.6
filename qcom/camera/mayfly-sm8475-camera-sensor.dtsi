@@ -484,7 +484,10 @@
 
 	qcom,cam-res-mgr {
 		compatible = "qcom,cam-res-mgr";
-		gpios-shared-pinctrl = <427 371 303 403>;
+		shared-pinctrl-gpios = <&tlmm 126 0>,
+			<&tlmm 70 0>,
+			<&tlmm 2 0>,
+			<&tlmm 102 0>;
 		shared-pctrl-gpio-names = "cam_wide", "cam_wide", "cam_wide", "cam_wide";
 		pinctrl-names = "cam_wide_active", "cam_wide_suspend";
 		pinctrl-0 = <&cam_sensor_active_rst9
