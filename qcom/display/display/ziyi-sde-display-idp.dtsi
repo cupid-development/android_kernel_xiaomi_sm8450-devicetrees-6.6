@@ -227,7 +227,7 @@
 	qcom,mdss-brightness-max-level = <4095>;
 	qcom,mdss-dsi-factory-bl-max-level = <2047>;
 	qcom,mdss-factory-brightness-max-level = <2047>;
-	qcom,mdss-brightness-init-level = <307>;
+	qcom,mdss-brightness-default-level = <307>;
 	qcom,mdss-dsi-bl-inverted-dbv;
 	qcom,platform-te-gpio = <&tlmm 82 0>;
 	qcom,platform-reset-gpio = <&tlmm 42 0>;
@@ -241,7 +241,7 @@
 	qcom,mdss-brightness-max-level = <4095>;
 	qcom,mdss-dsi-factory-bl-max-level = <2047>;
 	qcom,mdss-factory-brightness-max-level = <2047>;
-	qcom,mdss-brightness-init-level = <307>;
+	qcom,mdss-brightness-default-level = <307>;
 	qcom,mdss-dsi-bl-inverted-dbv;
 	qcom,platform-te-gpio = <&tlmm 82 0>;
 	qcom,platform-reset-gpio = <&tlmm 42 0>;
@@ -255,7 +255,7 @@
 	qcom,mdss-brightness-max-level = <4095>;
 	qcom,mdss-dsi-factory-bl-max-level = <2047>;
 	qcom,mdss-factory-brightness-max-level = <2047>;
-	qcom,mdss-brightness-init-level = <307>;
+	qcom,mdss-brightness-default-level = <307>;
 	qcom,mdss-dsi-bl-inverted-dbv;
 	qcom,platform-te-gpio = <&tlmm 82 0>;
 	qcom,platform-reset-gpio = <&tlmm 42 0>;
