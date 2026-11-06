@@ -1,8 +1,17 @@
 /dts-v1/;
 /plugin/;
 
+#include <dt-bindings/clock/qcom,camcc-waipio.h>
+#include <dt-bindings/clock/qcom,gcc-waipio.h>
+#include <dt-bindings/interconnect/qcom,waipio.h>
+#include <dt-bindings/interrupt-controller/arm-gic.h>
+#include <dt-bindings/regulator/qcom,rpmh-regulator-levels.h>
+
 #include "mondrian-sm8475.dtsi"
 #include "mondrian-wl2866d.dtsi"
+#include "audio/mondrian-audio.dtsi"
+#include "camera/mondrian-sm8475-camera-sensor.dtsi"
+#include "display/display/mondrian-sde-display-mtp.dtsi"
 
 / {
 	model = "Mondrian based on Qualcomm Technologies, Inc SM8475";
