@@ -993,10 +993,13 @@
 				<&apps_smmu 0x2120 0x420>,
 				<&apps_smmu 0x2520 0x420>;
 			cam-smmu-label = "icp";
+			iova-region-discard = <0xe0000000 0x800000>;
 			dma-coherent;
 			memory-region = <&cam_smmu_icp_resv_region>;
 			cam_smmu_icp_resv_region: cam_smmu_icp_resv_region {
-				iommu-addresses = <&msm_cam_smmu_icp 0x0 0x10c00000>;
+				iommu-addresses = <&msm_cam_smmu_icp 0x0 0x10c00000>,
+					<&msm_cam_smmu_icp 0xe0000000 0x800000>,
+					<&msm_cam_smmu_icp 0xfef00000 0x1100000>;
 			};
 			icp_iova_mem_map: iova-mem-map {
 				iova-mem-region-shared {
