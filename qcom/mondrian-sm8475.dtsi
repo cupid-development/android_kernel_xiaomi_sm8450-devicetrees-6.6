@@ -177,6 +177,10 @@
 	qcom,shutdown-voltage = <3350>;
 };
 
+&pm8350b_haptics {
+	qcom,fifo-vmax-mv = <9000>;
+};
+
 &nxp_eusb2_repeater {
 	qcom,param-override-seq = /* override value offset */
 		<0x50 0x06
