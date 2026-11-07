@@ -596,9 +596,16 @@ _platform_map = {
     },
     "waipio": {
         "dtb_list": [
+            {"name": "waipio.dtb"},
+            {"name": "waipio-v2.dtb"},
+            {"name": "waipiop.dtb"},
+            {"name": "waipiop-v2.dtb"},
+            {"name": "waipio-lte.dtb"},
             {"name": "cape.dtb"},
         ],
         "dtbo_list": [
+            {"name": "cupid-sm8450-pm8008-overlay.dtbo"},
+            {"name": "zeus-sm8450-pm8008-overlay.dtbo"},
             {"name": "diting-sm8475-pm8008-overlay.dtbo"},
             {"name": "mayfly-sm8475-pm8008-overlay.dtbo"},
             {"name": "mondrian-sm8475-pm8008-overlay.dtbo"},
