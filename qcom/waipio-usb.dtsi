@@ -85,6 +85,7 @@
 
 		qcom,usbbam@a704000 {
 			compatible = "qcom,usb-bam-msm";
+			qcom,bam-type = <0>;
 			reg = <0x0 0xa704000 0x0 0x18000>;
 			interrupts = <GIC_SPI 132 IRQ_TYPE_LEVEL_HIGH>;
 
