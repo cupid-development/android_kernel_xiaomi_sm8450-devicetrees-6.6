@@ -596,22 +596,22 @@ _platform_map = {
     },
     "waipio": {
         "dtb_list": [
-            {"name": "waipio.dtb"},
-            {"name": "waipio-v2.dtb"},
-            {"name": "waipiop.dtb"},
-            {"name": "waipiop-v2.dtb"},
-            {"name": "waipio-lte.dtb"},
-            {"name": "cape.dtb"},
+            {"name": "waipio.dtb", "soc": "waipio"},
+            {"name": "waipio-v2.dtb", "soc": "waipio"},
+            {"name": "waipiop.dtb", "soc": "waipio"},
+            {"name": "waipiop-v2.dtb", "soc": "waipio"},
+            {"name": "waipio-lte.dtb", "soc": "waipio"},
+            {"name": "cape.dtb", "soc": "cape"},
         ],
         "dtbo_list": [
-            {"name": "cupid-sm8450-pm8008-overlay.dtbo"},
-            {"name": "zeus-sm8450-pm8008-overlay.dtbo"},
-            {"name": "diting-sm8475-pm8008-overlay.dtbo"},
-            {"name": "mayfly-sm8475-pm8008-overlay.dtbo"},
-            {"name": "mondrian-sm8475-pm8008-overlay.dtbo"},
-            {"name": "thor-sm8475-pm8008-overlay.dtbo"},
-            {"name": "unicorn-sm8475-pm8008-overlay.dtbo"},
-            {"name": "zizhan-sm8475-pm8008-overlay.dtbo"},
+            {"name": "cupid-sm8450-pm8008-overlay.dtbo", "soc": "waipio"},
+            {"name": "zeus-sm8450-pm8008-overlay.dtbo", "soc": "waipio"},
+            {"name": "diting-sm8475-pm8008-overlay.dtbo", "soc": "cape"},
+            {"name": "mayfly-sm8475-pm8008-overlay.dtbo", "soc": "cape"},
+            {"name": "mondrian-sm8475-pm8008-overlay.dtbo", "soc": "cape"},
+            {"name": "thor-sm8475-pm8008-overlay.dtbo", "soc": "cape"},
+            {"name": "unicorn-sm8475-pm8008-overlay.dtbo", "soc": "cape"},
+            {"name": "zizhan-sm8475-pm8008-overlay.dtbo", "soc": "cape"},
         ],
     },
 }
@@ -635,6 +635,9 @@ def _get_dtb_lists(target, dt_overlay_supported):
                 dtb_base = dtb["name"].replace(".dtb", "")
                 for dtbo in _platform_map[dtb_node].get("dtbo_list", []):
                     if not dtbo.get("apq", True) and dtb.get("apq", False):
+                        continue
+
+                    if dtbo.get("soc") != dtb.get("soc"):
                         continue
 
                     dtbo_base = dtbo["name"].replace(".dtbo", "")
