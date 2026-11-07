@@ -284,7 +284,7 @@ parrot-dtb-$(CONFIG_ARCH_RAVELIN) += \
 parrot-overlays-dtb-$(CONFIG_ARCH_RAVELIN) += $(RAVELIN_BOARDS) $(RAVELIN_BASE_DTB) $(RAVELIN_4GB_BOARDS) $(RAVELIN_4GB_BASE_DTB)
 dtb-y += $(parrot-dtb-y)
 
-WAIPIO_BASE_DTB += waipio.dtb waipio-v2.dtb waipiop.dtb waipiop-v2.dtb waipio-lte.dtb
+WAIPIO_BASE_DTB += waipio.dtb waipio-v2.dtb
 WAIPIO_BOARDS += cupid-sm8450-pm8008-overlay.dtbo zeus-sm8450-pm8008-overlay.dtbo
 
 waipio-dtb-$(CONFIG_ARCH_WAIPIO) += \

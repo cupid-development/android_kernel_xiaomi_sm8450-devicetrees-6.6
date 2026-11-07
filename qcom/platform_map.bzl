@@ -598,9 +598,6 @@ _platform_map = {
         "dtb_list": [
             {"name": "waipio.dtb", "soc": "waipio"},
             {"name": "waipio-v2.dtb", "soc": "waipio"},
-            {"name": "waipiop.dtb", "soc": "waipio"},
-            {"name": "waipiop-v2.dtb", "soc": "waipio"},
-            {"name": "waipio-lte.dtb", "soc": "waipio"},
             {"name": "cape.dtb", "soc": "cape"},
         ],
         "dtbo_list": [
