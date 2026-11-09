@@ -305,6 +305,13 @@ cape-dtb-$(CONFIG_ARCH_CAPE) += \
 	$(call add-overlays, $(CAPE_BOARDS),$(CAPE_BASE_DTB))
 dtb-y += $(cape-dtb-y)
 
+UKEE_BASE_DTB += ukee.dtb
+UKEE_BOARDS += marble-sm7475-pm8008-overlay.dtbo
+
+ukee-dtb-$(CONFIG_ARCH_CAPE) += \
+	$(call add-overlays, $(UKEE_BOARDS),$(UKEE_BASE_DTB))
+dtb-y += $(ukee-dtb-y)
+
 endif
 
 ifeq ($(CONFIG_ARCH_PINEAPPLE), y)

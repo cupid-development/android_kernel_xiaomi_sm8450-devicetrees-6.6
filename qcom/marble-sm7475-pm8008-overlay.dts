@@ -1,7 +1,16 @@
 /dts-v1/;
 /plugin/;
 
+#include <dt-bindings/clock/qcom,camcc-waipio.h>
+#include <dt-bindings/clock/qcom,gcc-waipio.h>
+#include <dt-bindings/interconnect/qcom,waipio.h>
+#include <dt-bindings/interrupt-controller/arm-gic.h>
+#include <dt-bindings/regulator/qcom,rpmh-regulator-levels.h>
+
 #include "marble-sm7475.dtsi"
+#include "audio/marble-audio.dtsi"
+#include "camera/marble-sm7475-camera-sensor.dtsi"
+#include "display/display/marble-sde-display-mtp.dtsi"
 #include "waipio-pm8008.dtsi"
 
 / {

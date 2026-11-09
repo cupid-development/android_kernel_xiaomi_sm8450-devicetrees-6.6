@@ -599,6 +599,7 @@ _platform_map = {
             {"name": "waipio.dtb", "soc": "waipio"},
             {"name": "waipio-v2.dtb", "soc": "waipio"},
             {"name": "cape.dtb", "soc": "cape"},
+            {"name": "ukee.dtb", "soc": "ukee"},
         ],
         "dtbo_list": [
             {"name": "cupid-sm8450-pm8008-overlay.dtbo", "soc": "waipio"},
@@ -609,6 +610,7 @@ _platform_map = {
             {"name": "thor-sm8475-pm8008-overlay.dtbo", "soc": "cape"},
             {"name": "unicorn-sm8475-pm8008-overlay.dtbo", "soc": "cape"},
             {"name": "zizhan-sm8475-pm8008-overlay.dtbo", "soc": "cape"},
+            {"name": "marble-sm7475-pm8008-overlay.dtbo", "soc": "ukee"},
         ],
     },
 }
